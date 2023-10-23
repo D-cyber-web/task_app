@@ -10,4 +10,7 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost/todo/delete 
+DELETE http://localhost:3001/todo/delete/
+
+###
+PUT http://localhost:3001/todo/complete/
