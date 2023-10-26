@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect("mongodb://127.0.0.1:27017/mern-todo", {
+mongoose.connect("mongodb+srv://muthama3david:3932Davie@cluster0.jo4fusn.mongodb.net/?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
@@ -22,7 +22,7 @@ app.get('/todos', async(req, res) => {
     res.json(todos);
 });
 
-app.post('/todos/new', (req, res) => {
+app.post('/todo/new', (req, res) => {
     const todo = new Todo({
         text: req.body.text
     });
